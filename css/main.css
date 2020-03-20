@@ -927,10 +927,10 @@ input::-moz-focus-inner {
  * markup:
  *
  * <aside class="pull-quote">
- *		<blockquote>
- *			<p></p>
- *		</blockquote>
- *	</aside>
+ *    <blockquote>
+ *      <p></p>
+ *    </blockquote>
+ *  </aside>
  *
  * --------------------------------------------------------------------- */
 .pull-quote {
@@ -968,8 +968,8 @@ input::-moz-focus-inner {
  * markup:
  *
  * <ul class="stats-tabs">
- *		<li><a href="#">[value]<em>[name]</em></a></li>
- *	</ul>
+ *    <li><a href="#">[value]<em>[name]</em></a></li>
+ *  </ul>
  *
  * Extend this object into your markup.
  *
@@ -2142,7 +2142,7 @@ html.no-csstransitions .home-content__main {
 .s-about {
   padding-top: 18rem;
   padding-bottom: 18rem;
-  background-color: #ffffff;
+  background-color: #e8cbc0;
   position: relative;
 }
 
@@ -2793,6 +2793,49 @@ html.no-csstransitions .home-content__main {
     margin-left: -3.3rem;
   }
 }
+
+
+/*
+*
+* ==========================================
+* TEAM
+* ==========================================
+*
+*/
+.s-team {
+  padding-top: 10.2rem;
+  padding-bottom: 10.2rem;
+  background-color: #e8cbc0;
+  color: rgba(255, 255, 255, 0.3);
+  position: relative;
+}
+
+body {
+  background: #e8cbc0;
+  background: -webkit-linear-gradient(to right, #e8cbc0, #636fa4);
+  background: linear-gradient(to right, #e8cbc0, #636fa4);
+  min-height: 100vh;
+}
+
+.social-link {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #0a192f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  border-radius: 50%;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+}
+
+.social-link:hover, .social-link:focus {
+  background: #0a192f;
+  text-decoration: none;
+  color: #555;
+}
+
 
 /* ===================================================================
  * # contact 
