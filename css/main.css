@@ -2142,7 +2142,7 @@ html.no-csstransitions .home-content__main {
 .s-about {
   padding-top: 18rem;
   padding-bottom: 18rem;
-  background-color: #e8cbc0;
+  background-color: #ffe9e9;
   position: relative;
 }
 
@@ -2805,7 +2805,7 @@ html.no-csstransitions .home-content__main {
 .s-team {
   padding-top: 10.2rem;
   padding-bottom: 10.2rem;
-  background-color: #e8cbc0;
+  background-color: #ffe9e9;
   color: rgba(255, 255, 255, 0.3);
   position: relative;
 }
