@@ -1587,6 +1587,10 @@ input::-moz-focus-inner {
   }
 }
 
+.site-logo {
+  width: 100px;
+}
+
 
 /* ===================================================================
  * # home
@@ -1801,9 +1805,7 @@ input::-moz-focus-inner {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-.home-social a:hover {
-  border-bottom: 1px solid #ffffff;
-}
+
 .home-social i {
   display: none;
 }
