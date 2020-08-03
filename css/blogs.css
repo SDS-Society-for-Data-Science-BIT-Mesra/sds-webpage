@@ -1,0 +1,44 @@
+body {
+  padding: 40px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+}
+
+.grid > article {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.grid > article img {
+  max-width: 100%;
+}
+
+.grid .text {
+  padding: 20px;
+}
+
+.heading {
+  text-decoration: underline;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.unstyled-list{
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  align-content: flex-start;
+  font-size: 1.2em;
+  padding-bottom: 10px;
+}
+
+.blog-title{
+  padding-bottom: 20px;
+  text-align: center;
+  text-decoration: underline;
+}
