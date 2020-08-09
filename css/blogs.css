@@ -3,6 +3,57 @@
  * # contact
  *
  * ------------------------------------------------------------------- */
+
+.carousel-inner {
+  height : 300px;
+  margin-bottom: 75px;
+  font-weight: bolder;
+  font-size: larger;
+  
+  font-family: 'Recursive', sans-serif;
+
+}
+
+.btn {
+  width: 75px;
+  height: 30px;
+  background-color: coral;
+  text-align: center;
+  color: beige;
+  font-family: 'Recursive', sans-serif;
+
+}
+
+.cardtext {
+  font-size: medium;
+}
+
+body {
+  background-color: #d3dbff;
+  font-family: 'Recursive', sans-serif;
+  text-decoration: none !important
+}
+
+.midpage {
+  margin-bottom: 100px;
+}
+
+.socialhead {
+  margin-bottom: 30px;
+}
+
+.carousel-inner img { 
+    max-width:100%;
+    max-height:100%;
+    width: auto; 
+    height: auto; 
+}
+
+.blog-head {
+  text-align: center;
+  margin-bottom: 100px;;
+}
+
 .s-contact {
   padding-top: 21rem;
   padding-bottom: 10.2rem;
