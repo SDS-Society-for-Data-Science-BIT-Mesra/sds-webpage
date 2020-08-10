@@ -14,6 +14,11 @@
 
 }
 
+.card-img-top {
+  padding:5px;
+
+}
+
 .btn {
   width: 75px;
   height: 30px;
