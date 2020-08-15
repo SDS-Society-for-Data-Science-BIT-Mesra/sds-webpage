@@ -1260,6 +1260,7 @@ input::-moz-focus-inner {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  
 }
 .header-logo a {
   display: block;
@@ -1270,8 +1271,8 @@ input::-moz-focus-inner {
   transition: all 0.3s ease-in-out;
 }
 .header-logo img {
-  width: 300px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
 
 
@@ -1459,7 +1460,7 @@ input::-moz-focus-inner {
  * ------------------------------------------------------------------- */
 .header-menu-toggle {
   margin-top: 5px;
-  margin-right: 35px;
+  margin-right: 20px;
   position: fixed;
   right: 110px;
   top: 42px;
@@ -3299,7 +3300,7 @@ body {
 
 .topnav {
   margin-top: 20px;
-  margin-left: 250px;
+  margin-left: 70px;
   position: fixed;
 }
 
@@ -3320,6 +3321,7 @@ nav {
 .sidew {
   padding: 0;
   margin: 0;
+  width: 1075px;
 }
 
 
