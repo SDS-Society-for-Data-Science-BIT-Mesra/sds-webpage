@@ -1459,7 +1459,7 @@ input::-moz-focus-inner {
  * ------------------------------------------------------------------- */
 .header-menu-toggle {
   margin-top: 5px;
-  margin-right: 30px;
+  margin-right: 35px;
   position: fixed;
   right: 110px;
   top: 42px;
@@ -1498,7 +1498,7 @@ input::-moz-focus-inner {
   color: #cc147f;
 }
 
-/* 
+/*
 .affix {
   top: 0;
   width: 100%;
@@ -3297,9 +3297,6 @@ body {
 
 /*# sourceMappingURL=main.css.map */
 
-
-
-
 .topnav {
   margin-top: 20px;
   margin-left: 250px;
@@ -3320,12 +3317,17 @@ nav {
   width: 100%;
 }
 
+.sidew {
+  padding: 0;
+  margin: 0;
+}
+
 
 #nav {
     /* position: absolute; */
     position: sticky;
     overflow: hidden;
-
+    background-color: #000000;
     position: -webkit-sticky;
     top: 0;
 
@@ -3333,7 +3335,9 @@ nav {
 		top: 2.5em;
 		left: 0;
 		width: 100%;
-		text-align: center;
+    text-align: center;
+    height: 60px;
+    
 	}
 
 		#nav > ul {
@@ -3378,12 +3382,12 @@ nav {
 				#nav > ul > li.active > a, #nav > ul > li.active > span {
 					color: #fff;
         }
-        
 
 
 
 
-        .dropotron {
+
+  .dropotron {
 		background: #222835 url("images/overlay.png");
 		background-color: rgba(44, 50, 63, 0.925);
 		padding: 1.25em 1em 1.25em 1em;
