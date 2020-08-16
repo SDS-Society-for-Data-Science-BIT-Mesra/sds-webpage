@@ -1242,7 +1242,7 @@ input::-moz-focus-inner {
   height: 96px;
   background-color: transparent;
   position: absolute;
-  top: 24px;
+  /* top: 24px; */
 }
 
 
@@ -1256,7 +1256,7 @@ input::-moz-focus-inner {
   padding: 0;
   position: absolute;
   left: 110px;
-  top: 50%;
+  top: 57%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -1271,8 +1271,8 @@ input::-moz-focus-inner {
   transition: all 0.3s ease-in-out;
 }
 .header-logo img {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
 }
 
 
@@ -1463,7 +1463,7 @@ input::-moz-focus-inner {
   margin-right: 20px;
   position: fixed;
   right: 110px;
-  top: 42px;
+  top: 2px;
   width: 48px;
   height: 45px;
   line-height: 45px;
@@ -3299,8 +3299,7 @@ body {
 /*# sourceMappingURL=main.css.map */
 
 .topnav {
-  margin-top: 20px;
-  margin-left: 65px;
+  margin-left: -1px;
   position: fixed;
 }
 
@@ -3321,7 +3320,7 @@ nav {
 .sidew {
   padding: 0;
   margin: 0;
-  width: 1075px;
+  width: 1450px;
 }
 
 
@@ -3345,7 +3344,6 @@ nav {
 		#nav > ul {
 			display: inline-block;
 			border-radius: 0.35em;
-			box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
 			padding: 0 1.5em 0 1.5em;
 		}
 
