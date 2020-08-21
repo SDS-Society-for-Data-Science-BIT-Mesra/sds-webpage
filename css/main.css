@@ -413,7 +413,7 @@ fieldset {
 }
 
 input,
-textarea,
+textarea.input3,
 select,
 pre,
 blockquote,
@@ -473,19 +473,19 @@ input[type="text"],
 input[type="tel"],
 input[type="url"],
 input[type="password"],
-textarea,
+textarea.input3,
 select {
   display: block;
   height: 6rem;
   padding: 1.5rem 2.4rem;
   border: 0;
   outline: none;
-  color: #151515;
+  color: #aaaaaa;
   font-family: "metropolis-regular", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   line-height: 3rem;
   max-width: 100%;
-  background: rgba(0, 0, 0, 0.12);
+  background: rgba(0, 0, 0, 0.30);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -540,7 +540,7 @@ select {
   display: none;
 }
 
-textarea {
+textarea.input3 {
   min-height: 25rem;
 }
 
@@ -551,9 +551,9 @@ input[type="text"]:focus,
 input[type="tel"]:focus,
 input[type="url"]:focus,
 input[type="password"]:focus,
-textarea:focus,
+textarea.input3:focus,
 select:focus {
-  color: #000000;
+  color: #dddddd;
 }
 
 label,
@@ -620,8 +620,8 @@ label > input[type="radio"] {
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus input:-webkit-autofill,
-textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+textarea.input3:-webkit-autofill,
+textarea.input3:-webkit-autofill:hover textarea.input3:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
@@ -3073,7 +3073,7 @@ body {
   }
 
   .contact-social {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -3084,7 +3084,7 @@ body {
 
   .contact-secondary,
   .cl-copyright {
-    padding-right: 7.8rem;
+    padding-right: 5.6rem;
   }
 
   .contact-secondary {
@@ -3138,7 +3138,7 @@ body {
   }
 
   .contact-social {
-    font-size: 2rem;
+    font-size: 2.8rem;
   }
 
   .cl-go-top {
