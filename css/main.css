@@ -413,7 +413,7 @@ fieldset {
 }
 
 input,
-textarea,
+textarea.input3,
 select,
 pre,
 blockquote,
@@ -458,75 +458,6 @@ form,
   display: none;
 }
 
-
-
-/* ===================================================================
- * # preloader
- *
- * ------------------------------------------------------------------- */
-#preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #050505;
-  z-index: 800;
-  height: 100%;
-  width: 100%;
-}
-
-.no-js #preloader,
-.oldie #preloader {
-  display: none;
-}
-
-#loader {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 60px;
-  height: 60px;
-  margin: -30px 0 0 -30px;
-  padding: 0;
-}
-
-#loader:before {
-  content: "";
-  border-top: 6px solid rgba(255, 255, 255, 0.1);
-  border-right: 6px solid rgba(255, 255, 255, 0.1);
-  border-bottom: 6px solid rgba(255, 255, 255, 0.1);
-  border-left: 6px solid #cc147f;
-  -webkit-animation: load 1.1s infinite linear;
-  animation: load 1.1s infinite linear;
-  display: block;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-}
-
-@-webkit-keyframes load {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@keyframes load {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-
 /* ===================================================================
  * # forms
  *
@@ -542,19 +473,19 @@ input[type="text"],
 input[type="tel"],
 input[type="url"],
 input[type="password"],
-textarea,
+textarea.input3,
 select {
   display: block;
   height: 6rem;
   padding: 1.5rem 2.4rem;
   border: 0;
   outline: none;
-  color: #151515;
+  color: #aaaaaa;
   font-family: "metropolis-regular", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   line-height: 3rem;
   max-width: 100%;
-  background: rgba(0, 0, 0, 0.12);
+  background: rgba(0, 0, 0, 0.30);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -609,7 +540,7 @@ select {
   display: none;
 }
 
-textarea {
+textarea.input3 {
   min-height: 25rem;
 }
 
@@ -620,9 +551,9 @@ input[type="text"]:focus,
 input[type="tel"]:focus,
 input[type="url"]:focus,
 input[type="password"]:focus,
-textarea:focus,
+textarea.input3:focus,
 select:focus {
-  color: #000000;
+  color: #dddddd;
 }
 
 label,
@@ -689,8 +620,8 @@ label > input[type="radio"] {
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus input:-webkit-autofill,
-textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+textarea.input3:-webkit-autofill,
+textarea.input3:-webkit-autofill:hover textarea.input3:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
@@ -2862,8 +2793,8 @@ body {
  *
  * ------------------------------------------------------------------- */
 .s-contact {
-  padding-top: 21rem;
-  padding-bottom: 10.2rem;
+  padding-top: 7rem;
+  padding-bottom: 3.1rem;
   background-color: #111111;
   color: rgba(255, 255, 255, 0.3);
   position: relative;
@@ -2878,18 +2809,13 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.contact-main {
-  margin-top: 14.4rem;
-  margin-bottom: 4.8rem;
-}
-
 .contact-email {
   display: inline-block;
   font-family: "metropolis-light", sans-serif;
-  font-size: 5.4rem;
+  font-size: 4rem;
   line-height: 1.222;
   color: #ffffff;
-  padding-top: 3.6rem;
+  padding-top: 1.2rem;
   position: relative;
 }
 .contact-email::before {
@@ -2912,7 +2838,7 @@ body {
 
 .contact-address {
   font-family: "metropolis-regular", sans-serif;
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   line-height: 1.607;
   margin-top: 2.4rem;
 }
@@ -3110,15 +3036,11 @@ body {
 }
 @media only screen and (max-width: 1200px) {
   .s-contact {
-    padding-top: 15rem;
-  }
-
-  .contact-main {
-    margin-top: 13.2rem;
+    padding-top: 7rem;
   }
 
   .contact-email {
-    font-size: 5rem;
+    font-size: 2rem;
   }
 
   .contact-number {
@@ -3126,7 +3048,7 @@ body {
   }
 
   .contact-address {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
   }
 
   .contact-social {
@@ -3139,7 +3061,7 @@ body {
 }
 @media only screen and (max-width: 1000px) {
   .contact-email {
-    font-size: 4.2rem;
+    font-size: 3.6rem;
   }
 
   .contact-number {
@@ -3147,22 +3069,22 @@ body {
   }
 
   .contact-address {
-    font-size: 2.1rem;
+    font-size: 2rem;
   }
 
   .contact-social {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
   }
 }
 @media only screen and (max-width: 800px) {
   .s-contact {
-    padding-top: 12rem;
-    padding-bottom: 9rem;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
   }
 
   .contact-secondary,
   .cl-copyright {
-    padding-right: 7.8rem;
+    padding-right: 5.6rem;
   }
 
   .contact-secondary {
@@ -3170,7 +3092,7 @@ body {
   }
 
   .contact-email {
-    font-size: 3.6rem;
+    font-size: 3rem;
   }
 
   .contact-number {
@@ -3178,7 +3100,7 @@ body {
   }
 
   .contact-address {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .cl-go-top {
@@ -3200,15 +3122,11 @@ body {
 }
 @media only screen and (max-width: 600px) {
   .s-contact {
-    padding-bottom: 6rem;
-  }
-
-  .contact-main {
-    margin-top: 12rem;
+    padding-bottom: 3rem;
   }
 
   .contact-email {
-    font-size: 3rem;
+    font-size: 2.6rem;
   }
 
   .contact-number {
@@ -3216,11 +3134,11 @@ body {
   }
 
   .contact-address {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .contact-social {
-    font-size: 2rem;
+    font-size: 2.8rem;
   }
 
   .cl-go-top {
@@ -3252,12 +3170,8 @@ body {
 }
 @media only screen and (max-width: 400px) {
   .s-contact {
-    padding-top: 9.6rem;
-    padding-bottom: 3rem;
-  }
-
-  .contact-main {
-    margin-top: 9.6rem;
+    padding-top: 4.6rem;
+    padding-bottom: 2rem;
   }
 
   .contact-secondary {
@@ -3265,7 +3179,7 @@ body {
   }
 
   .contact-email {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
 
   .contact-number {
@@ -3273,7 +3187,7 @@ body {
   }
 
   .cl-copyright {
-    margin-top: 9rem;
+    margin-top: 7rem;
     padding: 0;
     text-align: center;
   }
@@ -3286,7 +3200,7 @@ body {
   }
 
   .cl-go-top {
-    bottom: 12rem;
+    bottom: 11rem;
     right: 50%;
     margin-right: -24px;
   }
