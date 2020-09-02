@@ -2798,7 +2798,14 @@ body {
   background-color: #111111;
   color: rgba(255, 255, 255, 0.3);
   position: relative;
+  /* padding-left: 200px; */
 }
+
+.event-contact {
+  padding-left: 70px;;
+}
+
+
 .s-contact a {
   color: #ffffff;
   border-bottom: 1px solid transparent;
