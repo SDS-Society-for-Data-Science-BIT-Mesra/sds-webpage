@@ -2,7 +2,23 @@
  * # base style overrides
  *
  * ------------------------------------------------------------------- */
-html {
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5){
+
+  html,
+  body{
+    width:100%;
+    overflow-x:hidden;
+  }
+
+}
+
+
+ html {
   font-size: 10px;
 }
 @media only screen and (max-width: 400px) {
@@ -11,9 +27,20 @@ html {
   }
 }
 
-html, body {
+/* html, body {
   height: 100%;
+} */
+
+html,body
+{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  /* overflow-x: hidden;  */
 }
+
+
 
 body {
   background: #111111;
@@ -2801,9 +2828,9 @@ body {
   /* padding-left: 200px; */
 }
 
-.event-contact {
+/* .event-contact {
   padding-left: 70px;
-}
+} */
 
 
 
@@ -3288,7 +3315,7 @@ nav {
 					font-size: 0.7em;
 					letter-spacing: 0.25em;
 					height: 5em;
-					line-height: 5em;
+					line-height: 4.35em;
 					-moz-transition: all .25s ease-in-out;
 					-webkit-transition: all .25s ease-in-out;
 					-o-transition: all .25s ease-in-out;
