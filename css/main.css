@@ -1067,6 +1067,10 @@ input::-moz-focus-inner {
   max-width: 1400px;
 }
 
+.row {
+  padding-left: 70px;
+}
+
 .narrow {
   max-width: 800px;
 }
@@ -2801,9 +2805,9 @@ body {
   /* padding-left: 200px; */
 }
 
-.event-contact {
+/* .event-contact {
   padding-left: 70px;
-}
+} */
 
 
 
