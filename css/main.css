@@ -1067,10 +1067,6 @@ input::-moz-focus-inner {
   max-width: 1400px;
 }
 
-.row {
-  padding-left: 70px;
-}
-
 .narrow {
   max-width: 800px;
 }
