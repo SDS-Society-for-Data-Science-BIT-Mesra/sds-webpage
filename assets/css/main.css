@@ -500,14 +500,14 @@ input, select, textarea {
 					padding-top: 1em;
 				}
 
-		.row {
+		/* .row {
 			margin-top: 0;
 			margin-left: -2em;
-		}
+		} */
 
-			.row > * {
+			/* .row > * {
 				padding: 0 0 0 2em;
-			}
+			} */
 
 			.row.gtr-uniform {
 				margin-top: -2em;
@@ -745,12 +745,12 @@ input, select, textarea {
 
 				.row {
 					margin-top: 0;
-					margin-left: -2em;
+					margin: 0 auto;
 				}
 
-					.row > * {
+					/* .row > * {
 						padding: 0 0 0 2em;
-					}
+					} */
 
 					.row.gtr-uniform {
 						margin-top: -2em;
