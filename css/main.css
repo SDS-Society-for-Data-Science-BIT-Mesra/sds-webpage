@@ -2361,7 +2361,7 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 .s-works {
   background: #ffffff;
-  padding: 18rem 0 24rem;
+  padding: 10rem 0 15rem;
   position: relative;
 }
 
@@ -2624,7 +2624,7 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 .testimonials-header {
   text-align: center;
-  margin-top: 7.2rem;
+  margin-top: 3.2rem;
 }
 
 .testimonials {
