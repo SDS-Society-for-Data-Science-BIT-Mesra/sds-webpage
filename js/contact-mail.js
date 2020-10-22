@@ -41,7 +41,7 @@ function sendEmail() {
 
     let s = `
     <html>
-         <h2>Message From osDFS website</h2>
+         <h2>Enquiry to SDS, BIT Mesra</h2>
       Name of the sender: ${name} <br/>
       Email id of the sender : ${email} <br/>
       Subject : ${subject} <br/>
