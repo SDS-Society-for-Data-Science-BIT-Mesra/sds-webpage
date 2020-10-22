@@ -577,7 +577,7 @@
             </div>
 
             <div class="col" data-aos="fade-up">
-                <form class="contact3-form">
+                <form method="post" class="contact3-form" onsubmit="event.preventDefault()">
 
                     <!-- <div class="row section-header">
                         <div class="col-full">
@@ -591,13 +591,13 @@
     
                         <!--Grid column-->
                         <div class="col-md-6">
-                            <input class="input3" type="text" name="name" placeholder="Your Name">
+                            <input class="input3" type="text" name="name" id="name" placeholder="Your Name">
                         </div>
                         <!--Grid column-->
     
                         <!--Grid column-->
                         <div class="col-md-6">
-                            <input class="input3" type="text" name="email" placeholder="Your Email">
+                            <input class="input3" type="text" name="email" id="email" placeholder="Your Email">
                         </div>
                         <!--Grid column-->
     
@@ -607,7 +607,7 @@
                     <!--Grid row-->
                     <div class="row">
                         <div class="col-full">
-                            <input class="input3" type="text" name="subject" placeholder="Subject">
+                            <input class="input3" type="text" name="subject" id="subject" placeholder="Subject">
                             </div>
                     </div>
                     <!--Grid row-->
@@ -616,13 +616,13 @@
                     <div class="row">
                         <!--Grid column-->
                         <div class="col-full">
-                            <textarea class="input3" name="message" placeholder="Your Message"></textarea>
+                            <textarea class="input3" name="message" placeholder="Your Message" id="message"></textarea>
                         </div>
                     </div>
                     <!--Grid row-->
     
                     <div class="text-center">
-                        <button type="submit" class="btn btn-primary send-btn">Send</button>
+                        <button type="submit" class="btn btn-primary send-btn" id="submit" onclick="sendEmail()">Send</button>
                     </div>
                     <!-- <div class="status"></div> -->
 
@@ -681,5 +681,7 @@ Copyright &copy;2020 All rights reserved | <a target="_blank">Society for Data S
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/contact-mail.js"></script>
 </body>
 </html>
