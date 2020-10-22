@@ -289,7 +289,7 @@ Analytics will help find meaningful patterns in data and uncover new knowledge b
 
             <div class="col" data-aos="fade-up">
                 
-                <form class="contact3-form eventform">
+                <form method="post" class="contact3-form eventform" onsubmit="event.preventDefault()">
 
                     <!-- <div class="row section-header">
                         <div class="col-full">
@@ -303,13 +303,13 @@ Analytics will help find meaningful patterns in data and uncover new knowledge b
     
                         <!--Grid column-->
                         <div class="col-md-6">
-                            <input class="input3" type="text" name="name" placeholder="Your Name">
+                            <input class="input3" type="text" name="name" id="name" placeholder="Your Name">
                         </div>
                         <!--Grid column-->
     
                         <!--Grid column-->
                         <div class="col-md-6">
-                            <input class="input3" type="text" name="email" placeholder="Your Email">
+                            <input class="input3" type="text" name="email" id="email" placeholder="Your Email">
                         </div>
                         <!--Grid column-->
     
@@ -319,7 +319,7 @@ Analytics will help find meaningful patterns in data and uncover new knowledge b
                     <!--Grid row-->
                     <div class="row">
                         <div class="col-full">
-                            <input class="input3" type="text" name="subject" placeholder="Subject">
+                            <input class="input3" type="text" name="subject" id="subject" placeholder="Subject">
                             </div>
                     </div>
                     <!--Grid row-->
@@ -328,10 +328,10 @@ Analytics will help find meaningful patterns in data and uncover new knowledge b
                     <div class="row">
                         <!--Grid column-->
                         <div class="col-full">
-                            <textarea class="input3" name="message" placeholder="Your Message"></textarea>
+                            <textarea class="input3" name="message" id="message" placeholder="Your Message"></textarea>
                         </div>
                         <div style="margin-left: auto;margin-right: auto;">
-                  <button style="align-content: center;font-size: .75em;background: white;">Send</button>
+                  <button style="align-content: center;font-size: .75em;background: white;" id="submit" onclick="sendEmail()">Send</button>
                     <!-- <div class="status"></div> -->
                  </div>
                     </div>
@@ -402,7 +402,8 @@ Copyright &copy;2020 All rights reserved | <a target="_blank">Society for Data S
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/contact-mail.js"></script>
     </body>
 </html>
 
