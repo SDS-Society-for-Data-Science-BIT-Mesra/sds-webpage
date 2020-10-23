@@ -85,6 +85,10 @@ textarea.input3:-ms-input.input3-placeholder { color: rgba(255,255,255,0.8);}
   
     background: #fff;
   }
+  
+  .send-btn:hover {
+    background-color: #fff;
+  }
 
   input.input3 {
     height: 45px;

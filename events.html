@@ -23,12 +23,12 @@
     
     <!-- CSS
     ================================================== -->
+    <link rel="stylesheet" href="css/main.css">
     <link defer rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <!-- favicons
     ================================================== -->
@@ -53,12 +53,12 @@
                             <img src="images/twinPeaks-removebg-preview.png" alt="Homepage">
                         </a>
                     </div>
-                    <li><a class="smoothscroll navfix" href="#about">About</a></li>
-                    <li><a class="smoothscroll navfix" href="#services">Services</a></li>
-                    <li><a class="smoothscroll navfix" href="#team">Our Team</a></li>
-                    <li><a class="smoothscroll navfix" href="#contact">Contact</a></li>
+                    <li><a href="/index.html#about">About</a></li>
+                    <li><a href="/index.html#services">Services</a></li>
+                    <li><a href="/index.html#team">Our Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <li><a  href="blogs/index.html" target="_blank" rel="noopener">Blogs</a></li>
-                    <li><a  href="#">Events</a></li>
+                    <li><a  href="https://sdsbitmesra.in">Events</a></li>
                 </ul>
             </nav>
         </div>
@@ -79,12 +79,12 @@
                 <h3>Society for Data Science, BIT Mesra</h3>
 
                 <ul class="header-nav__list">
-                    <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
-                    <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
-                    <li><a class="smoothscroll"  href="#works" title="works">Work</a></li>
-                    <li><a class="smoothscroll"  href="#team" title="team">Our Team</a></li>
-                    <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
-                    <li><a  href="blogs/index.html" target="_blank" rel="noopener">Blogs</a></li>
+                    <li class="current"><a href="/index.html#home" title="home">Home</a></li>
+                    <li><a href="/index.html#about" title="about">About</a></li>
+                    <li><a href="/index.html#works" title="works">Work</a></li>
+                    <li><a href="/index.html#team" title="team">Our Team</a></li>
+                    <li><a href="#contact" title="contact">Contact</a></li>
+                    <li><a href="blogs/index.html" target="_blank" rel="noopener">Blogs</a></li>
                 </ul>
 
                 <ul class="header-nav__social">
@@ -232,7 +232,7 @@ Analytics will help find meaningful patterns in data and uncover new knowledge b
    
     <!-- contact
     ================================================== -->
-    <section id="contact" class="s-contact">
+    <section id="contact" class="s-contact event-contact">
 
         <div class="row">
             <div class="col">
@@ -248,7 +248,7 @@ Analytics will help find meaningful patterns in data and uncover new knowledge b
         
                     <div class="col-full contact-main" data-aos="fade-up">
                         <p>
-                        <a href="mailto:#sds.bitmesra@gmail.com" class="contact-email" style="font-size: 2em;">sds.bitmesra@gmail.com</a>
+                        <a href="mailto:#sds.bitmesra@gmail.com" class="contact-email" >sds.bitmesra@gmail.com</a>
                         </p>
                     </div> <!-- end contact-main -->
         
@@ -288,7 +288,8 @@ Analytics will help find meaningful patterns in data and uncover new knowledge b
             </div>
 
             <div class="col" data-aos="fade-up">
-                <form class="contact3-form">
+                
+                <form method="post" class="contact3-form eventform" onsubmit="event.preventDefault()">
 
                     <!-- <div class="row section-header">
                         <div class="col-full">
@@ -302,13 +303,13 @@ Analytics will help find meaningful patterns in data and uncover new knowledge b
     
                         <!--Grid column-->
                         <div class="col-md-6">
-                            <input class="input3" type="text" name="name" placeholder="Your Name">
+                            <input class="input3" type="text" name="name" id="name" placeholder="Your Name">
                         </div>
                         <!--Grid column-->
     
                         <!--Grid column-->
                         <div class="col-md-6">
-                            <input class="input3" type="text" name="email" placeholder="Your Email">
+                            <input class="input3" type="text" name="email" id="email" placeholder="Your Email">
                         </div>
                         <!--Grid column-->
     
@@ -318,7 +319,7 @@ Analytics will help find meaningful patterns in data and uncover new knowledge b
                     <!--Grid row-->
                     <div class="row">
                         <div class="col-full">
-                            <input class="input3" type="text" name="subject" placeholder="Subject">
+                            <input class="input3" type="text" name="subject" id="subject" placeholder="Subject">
                             </div>
                     </div>
                     <!--Grid row-->
@@ -327,10 +328,10 @@ Analytics will help find meaningful patterns in data and uncover new knowledge b
                     <div class="row">
                         <!--Grid column-->
                         <div class="col-full">
-                            <textarea class="input3" name="message" placeholder="Your Message"></textarea>
+                            <textarea class="input3" name="message" id="message" placeholder="Your Message"></textarea>
                         </div>
                         <div style="margin-left: auto;margin-right: auto;">
-                  <button style="align-content: center;font-size: .75em;background: white;">Send</button>
+                  <button style="align-content: center;font-size: .75em;background: white;" id="submit" onclick="sendEmail()">Send</button>
                     <!-- <div class="status"></div> -->
                  </div>
                     </div>
@@ -401,7 +402,8 @@ Copyright &copy;2020 All rights reserved | <a target="_blank">Society for Data S
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/contact-mail.js"></script>
     </body>
 </html>
 

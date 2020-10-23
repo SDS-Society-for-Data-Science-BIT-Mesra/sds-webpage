@@ -2,7 +2,23 @@
  * # base style overrides
  *
  * ------------------------------------------------------------------- */
-html {
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5){
+
+  html,
+  body{
+    width:100%;
+    overflow-x:hidden;
+  }
+
+}
+
+
+ html {
   font-size: 10px;
 }
 @media only screen and (max-width: 400px) {
@@ -11,9 +27,20 @@ html {
   }
 }
 
-html, body {
+/* html, body {
   height: 100%;
+} */
+
+html,body
+{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  /* overflow-x: hidden;  */
 }
+
+
 
 body {
   background: #111111;
@@ -444,7 +471,7 @@ form,
   display: none;
 }
 
-.pace .pace-progress {
+/* .pace .pace-progress {
   background: #cc147f;
   position: fixed;
   z-index: 900;
@@ -452,7 +479,7 @@ form,
   right: 100%;
   width: 100%;
   height: 4px;
-}
+} */
 
 .oldie .pace {
   display: none;
@@ -2334,7 +2361,7 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 .s-works {
   background: #ffffff;
-  padding: 18rem 0 24rem;
+  padding: 10rem 0 15rem;
   position: relative;
 }
 
@@ -2597,7 +2624,7 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 .testimonials-header {
   text-align: center;
-  margin-top: 7.2rem;
+  margin-top: 3.2rem;
 }
 
 .testimonials {
@@ -2798,7 +2825,15 @@ body {
   background-color: #111111;
   color: rgba(255, 255, 255, 0.3);
   position: relative;
+  /* padding-left: 200px; */
 }
+
+/* .event-contact {
+  padding-left: 70px;
+} */
+
+
+
 .s-contact a {
   color: #ffffff;
   border-bottom: 1px solid transparent;
@@ -3280,7 +3315,7 @@ nav {
 					font-size: 0.7em;
 					letter-spacing: 0.25em;
 					height: 5em;
-					line-height: 5em;
+					line-height: 4.35em;
 					-moz-transition: all .25s ease-in-out;
 					-webkit-transition: all .25s ease-in-out;
 					-o-transition: all .25s ease-in-out;
