@@ -6,6 +6,11 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-storage.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script> 
+        <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -44,61 +49,30 @@
 												<!-- Form -->
 													<h3>Submit your Form</h3>
 
-													<form method="post" action="#">
+													<form onsubmit="insert();return false;">
 														<div class="row gtr-uniform">
 															<div class="col-6 col-12-xsmall">
-																<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+																<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" required/>
 															</div>
 															<div class="col-6 col-12-xsmall">
-																<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+																<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" required/>
 															</div>
-															<!-- Break 
-															<div class="col-12">
-																<select name="demo-category" id="demo-category">
-																	<option value="">- Topic -</option>
-																	<option value="1"></option>
-																	<option value="1">Shipping</option>
-																	<option value="1">Administration</option>
-																	<option value="1">Human Resources</option>
-																</select>
-															</div>-->
-															<!-- Break 
-															<div class="col-4 col-12-small">
-																<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-																<label for="demo-priority-low">Low</label>
-															</div>
-															<div class="col-4 col-12-small">
-																<input type="radio" id="demo-priority-normal" name="demo-priority">
-																<label for="demo-priority-normal">Normal</label>
-															</div>
-															<div class="col-4 col-12-small">
-																<input type="radio" id="demo-priority-high" name="demo-priority">
-																<label for="demo-priority-high">High</label>
-															</div>-->
-															<!-- Break 
-															<div class="col-6 col-12-small">
-																<input type="checkbox" id="demo-copy" name="demo-copy">
-																<label for="demo-copy">Email me a copy</label>
-															</div>
-															<div class="col-6 col-12-small">
-																<input type="checkbox" id="demo-human" name="demo-human" checked>
-																<label for="demo-human">I am a human</label>
-															</div>-->
+															
                                                             <div class="col-6 col-12-xsmall">
-																<input type="email" name="Topic" id="demo-email" value="" placeholder="Topic" />
+																<input type="text" name="Topic" id="demo-topic" value="" placeholder="Topic" required/>
 															</div>
 															<!-- Break -->
                                                             <div class="col-6 col-12-xsmall">
-																<input type="email" name="Topic" id="demo-email" value="" placeholder="Instagram Handle" />
+																<input type="text" name="Topic" id="demo-insta" value="" placeholder="Instagram Handle" />
 															</div>
 															<!-- Break -->
 															<div class="col-12">
-																<textarea name="Your Article" id="demo-message" placeholder="Your Blog" rows="12"></textarea>
+																<textarea name="Your Article" id="demo-message" placeholder="Your Blog" rows="12" required></textarea>
 															</div>
 															<!-- Break -->
 															<div class="col-12">
 																<ul class="actions">
-																	<li><input type="submit" value="Send Message" class="primary" /></li>
+																	<li><input type="submit" value="Send Message" class="primary"  /></li>
 																	<li><input type="reset" value="Reset" /></li>
 																</ul>
 															</div>
@@ -205,6 +179,7 @@
 			</div>
 
 		<!-- Scripts -->
+		    <script src="form.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
