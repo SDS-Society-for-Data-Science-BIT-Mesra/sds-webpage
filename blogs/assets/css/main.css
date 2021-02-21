@@ -171,6 +171,26 @@ h6 {
   h2 {
     font-size: 1.5em; } }
 
+    .container{
+      display:flex;
+    }
+    .para{
+      padding: 20px;
+      
+    }
+    @media (max-width: 800px) {
+      .container {
+          flex-direction: column;
+        }
+    }
+    @media(max-width:600px){
+      .imgs{
+        object-fit: contain;
+        max-width: 350px;
+        max-height: 800px;
+      }
+    }
+    
 sub {
   font-size: 0.8em;
   position: relative;
