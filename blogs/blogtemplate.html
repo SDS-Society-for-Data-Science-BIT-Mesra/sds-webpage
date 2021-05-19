@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Blogs</title>
+    <link rel="stylesheet" href="assets/css/featuredblogs.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src="blogs\assets\js\featuredBlog.js"></script>
+</head>
+<body class="is-preload">
+   
+			<div id="rapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+    <header id="header" class="temp">
+        <a href="index.html" class="logo"><strong>AI STREAK</strong> presented by SDS BIT Mesra</a>
+        <ul class="icons">
+            <li><a href="https://www.facebook.com/Society-for-Data-Science-BIT-Mesra-107499150681960" class="icon brands fa-facebook-f" target="_blank" rel="noopener"><span class="label">Facebook</span></a></li>
+            <li><a href="https://www.linkedin.com/company/society-for-data-science-bit-mesra" class="icon brands fa-linkedin" target="_blank" rel="noopener"><span class="label">Linkedin</span></a></li>
+            <li><a href="https://www.instagram.com/sds.bitm/" class="icon brands fa-instagram" target="_blank" rel="noopener"><span class="label">Instagram</span></a></li>
+            <li><a href="#" class="icon brands fa-medium-m" target="_blank" rel="noopener"><span class="label">Medium</span></a></li>
+        </ul>
+    </header>
+    <section id="banner">
+        <div class="content x">
+            
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit, enim assumenda. Unde reiciendis quisquam repellendus nobis maiores optio, in enim vel quia tempora, deleniti eveniet. Commodi dolor debitis ratione nihil.  
+        </div>
+        <span class="image object">
+            <img src="images/pic09-min.jpg" alt="img" />
+        </span>
+        <header>
+            <h1>heading</h1>
+           
+        </header>
+    </section>
+
+    <ul class="icons">
+      <li class="like"><i onclick="likeFunction(this)" class=" fa fa-heart-o" aria-hidden="true" ></i></li>
+        <li><a class=" social-share-url facebook icon brands fa-facebook-f" target="_blank" rel="noopener"><span class="label">Facebook</span></a></li>
+        <li><a  class="social-share-url twitter icon brands fa-linkedin" target="_blank" rel="noopener"><span class="label">Linkedin</span></a></li>
+        <li><a class="social-share-url linkedin icon brands fa-instagram" target="_blank" rel="noopener"><span class="label">Instagram</span></a></li>
+        <li><a class="social-share-url whatsapp icon brands fa-whatsapp" target="_blank" rel="noopener"><span class="label">Whatsapp</span></a></li>
+        </ul>
+
+        
+    
+    </div>
+                    </div>
+            </div>
+
+            <script>
+                function likeFunction(x) {
+                
+                if(x.classList[1]==="fa-heart-o"){
+                    x.className="fa fa-heart"
+                }
+                else
+                    x.className=" fa fa-heart-o";
+                    console.log(x.classList)
+            }
+            
+            
+            </script>
+</body>
+</html>
