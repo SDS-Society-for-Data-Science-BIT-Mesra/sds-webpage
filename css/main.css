@@ -1233,6 +1233,11 @@ input::-moz-focus-inner {
   height: 70px;
 }
 
+/* Navbar Width Fixed */
+.topnav{
+  width : 100%;
+}
+
 
 /* -------------------------------------------------------------------
  * ## main navigation
