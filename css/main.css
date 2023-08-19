@@ -54,6 +54,13 @@ body {
   padding: 0;
 }
 
+/* sds banner media query */
+@media screen and (min-width:600px){
+  #sds-banner img {
+    margin-top: 60px;
+  }
+}
+
 /* -------------------------------------------------------------------
  * ## links
  * ------------------------------------------------------------------- */
@@ -3394,3 +3401,4 @@ nav {
 			.dropotron li:hover > a, .dropotron li:hover > span {
 				color: #fff;
 			}
+   
