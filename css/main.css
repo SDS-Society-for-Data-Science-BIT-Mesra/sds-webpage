@@ -3317,7 +3317,7 @@ nav {
 			#nav > ul > li {
 				display: inline-block;
 				text-align: center;
-				padding: 0 1.5em 0 1.5em;
+				padding: 0 0.75em 0 0.75em;
 			}
 
 				#nav > ul > li > ul {
